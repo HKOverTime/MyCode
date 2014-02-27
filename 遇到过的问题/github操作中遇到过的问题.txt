@@ -1,0 +1,19 @@
+github 的问题：
+	一、github pages创建时一直提示404 错误
+		解决方法：
+			1.偶然机会发现可能是账户名称中存在大写的结果，重新注册了一纯小写用户名，就能成功显示测试页面了。
+			2.由于选择的 一个学习教程里面有个 CNAME 文件删除即可成功访问
+	二、github ssh连接 错误，解决方法，提示信息如下
+			Permission denied (publickey).   
+			fatal: The remote end hung up unexpectedly
+		问题原因：
+			ssh Key过期，导致连接失败
+		解决方法
+			1.首先生成一个新的key
+				# ssh-keygen
+				# cat ~/.ssh/id_rsa.pub
+			2.将cat命令的结果取出来保存在 github.com 主站
+				在github 工程主页的右上角有个 “edit your profile” 选项
+				找到 ssh key 选项卡将key 添加进去即可，title随便填
+			3. 此时就可以随意操作 github 了
+	二、
