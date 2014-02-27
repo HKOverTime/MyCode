@@ -16,4 +16,18 @@ github 的问题：
 				在github 工程主页的右上角有个 “edit your profile” 选项
 				找到 ssh key 选项卡将key 添加进去即可，title随便填
 			3. 此时就可以随意操作 github 了
-	二、
+	三、初始化 MyBlog
+		touch README.md	
+			//创建 Readme文件
+		git init
+			//初始化 项目的 git 配置
+		git add README.md
+			// 添加 ReadMe 到项目
+		git commit -m "first commit"
+			// 添加描述信息
+		git remote add origin git@github.com:USERNAME/PRONAME.git
+			//关联 远程仓库
+		git push -u origin master
+			// 	上传远程仓库
+		git pull origin master
+			//  同步远程仓库分支到本地

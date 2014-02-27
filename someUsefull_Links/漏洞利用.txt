@@ -1,0 +1,2 @@
+总结了最近几年一些绕过ROP的技术
+	http://www.fireeye.com/blog/technical/cyber-exploits/2013/10/aslr-bypass-apocalypse-in-lately-zero-day-exploits.html
