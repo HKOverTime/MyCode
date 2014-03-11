@@ -13,3 +13,6 @@ http://code.google.com/p/it-sec-catalog/wiki/Exploitation
 
 一个牛人的各种链接
 http://hi.baidu.com/pythond/item/e0eec604a5cfca056c904804
+
+
+https://docs.google.com/viewer?url=https%3A%2F%2Fsites.google.com%2Fsite%2Fzerodayresearch%2Fsmashing_the_heap_with_vector_Li.pdf%3Fattredirects%3D0
