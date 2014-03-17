@@ -15,4 +15,12 @@ http://code.google.com/p/it-sec-catalog/wiki/Exploitation
 http://hi.baidu.com/pythond/item/e0eec604a5cfca056c904804
 
 
+IE 0day 利用方法
 https://docs.google.com/viewer?url=https%3A%2F%2Fsites.google.com%2Fsite%2Fzerodayresearch%2Fsmashing_the_heap_with_vector_Li.pdf%3Fattredirects%3D0
+
+
+IE COM 组件开发方法
+http://www.codeproject.com/Articles/13601/COM-in-plain-C
+
+有很多好用的在线服务连接，包括一个在线反编译网站。。。
+http://blog.m4rk.org/online
