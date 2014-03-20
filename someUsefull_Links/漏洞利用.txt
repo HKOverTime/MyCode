@@ -1,3 +1,6 @@
+一个国外的安全研究团队的研究结果
+http://www.trailofbits.com/research/
+
 总结了最近几年一些绕过ROP的技术
 	http://www.fireeye.com/blog/technical/cyber-exploits/2013/10/aslr-bypass-apocalypse-in-lately-zero-day-exploits.html
 
@@ -24,3 +27,5 @@ http://www.codeproject.com/Articles/13601/COM-in-plain-C
 
 有很多好用的在线服务连接，包括一个在线反编译网站。。。
 http://blog.m4rk.org/online
+
+
