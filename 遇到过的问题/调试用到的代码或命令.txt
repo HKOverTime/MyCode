@@ -1,6 +1,11 @@
 Math.atan2(0xbadc0de,"Hello World !");
-
 bu jscript!JsAtan2 ".printf \"%mu\" poi(poi(poi(esp+14)+8)+8);.echo g"
+
+日志记录方法：
+.logopen d:\output.txt   -->    :!address   --> .logclose
+
+堆数据找回：
+s -u 10000 L8000000 "find_me?"
 
 
 一个漏洞分析的案例。
