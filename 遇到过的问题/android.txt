@@ -1,0 +1,3 @@
+android 后台安装 apk
+	pm install -r XXX.apk
+	
