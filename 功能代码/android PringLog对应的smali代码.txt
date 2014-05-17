@@ -1,3 +1,10 @@
+/**
+*	非常基本的 Log 输出代码，可以直接输出 String 类型的字符串
+*   Log.d("===test test==>",String);
+*/
+	const-string v3, "===test test==>"
+	invoke-static {v3, p1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
 
 *************************************************************************************************************************************
 *************************************************************************************************************************************
@@ -190,6 +197,56 @@
 
 *************************************************************************************************************************************
 *************************************************************************************************************************************
+输出JSONObject 语句
+/**
+*	Log.d("Hook_Log_Print", "======json[ "+bjJsonObject.toString()+" ]");
+*
+*	invoke-virtual {p0, v2}, Lcom/example/androidtest/MainActivity;->PrintJSON(Lorg/json/JSONObject;)V
+*
+*		PS:  Lcom/example/androidtest/MainActivity 这个类要替换成对应的新类名
+*/
+/////////////   Smali Code Here
+
+.method public PrintJSON(Lorg/json/JSONObject;)V
+    .registers 5
+    .parameter "bjJsonObject"
+
+    .prologue
+    .line 82
+    const-string v0, "Hook_Log_Print"
+
+    new-instance v1, Ljava/lang/StringBuilder;
+
+    const-string v2, "======json[ "
+
+    invoke-direct {v1, v2}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {p1}, Lorg/json/JSONObject;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    const-string v2, " ]"
+
+    invoke-virtual {v1, v2}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v1
+
+    invoke-virtual {v1}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v1
+
+    invoke-static {v0, v1}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 83
+    return-void
+.end method
+
+*************************************************************************************************************************************
+*************************************************************************************************************************************
 输出hello 测试语句
 /**
 *	Log.d("Hello_World","======[ Hello Smali Log Test ]");
@@ -214,3 +271,5 @@
     .line 52
     return-void
 .end method
+
+
