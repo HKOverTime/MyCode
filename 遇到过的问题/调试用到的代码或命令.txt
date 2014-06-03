@@ -7,6 +7,10 @@ bu jscript!JsAtan2 ".printf \"%mu\" poi(poi(poi(esp+14)+8)+8);.echo g"
 堆数据找回：
 s -u 10000 L8000000 "find_me?"
 
+通过网络进行调试：
+	dbgsrv.exe -t tcp:port=9999
+	windbg.exe -premote tcp:port=9999,server=xxx.xxx.xxx.xxx
+
 
 一个漏洞分析的案例。
 1.kvn  查看堆栈状态
