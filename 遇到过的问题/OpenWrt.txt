@@ -1,0 +1,9 @@
+opkg update
+opkg install luci
+opkg install luci-i18n-chinese
+/etc/init.d/uhttpd enable
+/etc/init.d/uhttpd restart
+
+/etc/init.d/network restart
+
+http://www.right.com.cn/forum/thread-50257-1-1.html   ?????会有用么
