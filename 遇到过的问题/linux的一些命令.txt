@@ -1,7 +1,7 @@
 ssh建立sockets 代理服务
 	ssh -qTfnN -D 0.0.0.0:1080 [ username ]@[ ipaddress ]
 
-Ubuntu屏幕网卡出问题时用到的命令
+Ubuntu屏幕显示出问题时用到的命令
 	sudo apt-get install -reinstall ubuntu-desktop
 	sudo apt-get install fglrx
 	sudo reboot
